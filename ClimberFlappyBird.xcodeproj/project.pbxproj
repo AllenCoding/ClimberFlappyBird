@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F5EB8A620D4AE5900459474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8A520D4AE5900459474 /* AppDelegate.m */; };
+		9F5EB8A920D4AE5900459474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8A820D4AE5900459474 /* ViewController.m */; };
+		9F5EB8AC20D4AE5900459474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8AA20D4AE5900459474 /* Main.storyboard */; };
+		9F5EB8AE20D4AE5900459474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8AD20D4AE5900459474 /* Assets.xcassets */; };
+		9F5EB8B120D4AE5900459474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8AF20D4AE5900459474 /* LaunchScreen.storyboard */; };
+		9F5EB8B420D4AE5900459474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8B320D4AE5900459474 /* main.m */; };
+		9F5EB8BE20D4AE5900459474 /* ClimberFlappyBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8BD20D4AE5900459474 /* ClimberFlappyBirdTests.m */; };
+		9F5EB8C920D4AE5900459474 /* ClimberFlappyBirdUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8C820D4AE5900459474 /* ClimberFlappyBirdUITests.m */; };
+		9F5EB8DF20D4AE9200459474 /* FCBirdOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8D620D4AE9100459474 /* FCBirdOverViewController.m */; };
+		9F5EB8E020D4AE9200459474 /* FCBirdGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8D920D4AE9100459474 /* FCBirdGameViewController.m */; };
+		9F5EB8E120D4AE9200459474 /* FCBirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8DB20D4AE9200459474 /* FCBirdViewController.m */; };
+		9F5EB8E220D4AE9200459474 /* FCBirdOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8DC20D4AE9200459474 /* FCBirdOverViewController.xib */; };
+		9F5EB8E320D4AE9200459474 /* FCBirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8DD20D4AE9200459474 /* FCBirdViewController.xib */; };
+		9F5EB8E420D4AE9200459474 /* FCBirdGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB8DE20D4AE9200459474 /* FCBirdGameViewController.xib */; };
+		9F5EB90820D4B00A00459474 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8EB20D4B00A00459474 /* NSString+Addition.m */; };
+		9F5EB90920D4B00A00459474 /* NSString+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8ED20D4B00A00459474 /* NSString+Safety.m */; };
+		9F5EB90A20D4B00A00459474 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8EF20D4B00A00459474 /* UIColor+Addition.m */; };
+		9F5EB90B20D4B00A00459474 /* CALayer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8F320D4B00A00459474 /* CALayer+Addition.m */; };
+		9F5EB90C20D4B00A00459474 /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8F620D4B00A00459474 /* UIBarButtonItem+Addition.m */; };
+		9F5EB90D20D4B00A00459474 /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8F820D4B00A00459474 /* UIButton+Addition.m */; };
+		9F5EB90E20D4B00A00459474 /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8FB20D4B00A00459474 /* UIImageView+Addition.m */; };
+		9F5EB90F20D4B00A00459474 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB8FE20D4B00A00459474 /* UILabel+Addition.m */; };
+		9F5EB91020D4B00A00459474 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB90220D4B00A00459474 /* UIView+Frame.m */; };
+		9F5EB91120D4B00A00459474 /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB90420D4B00A00459474 /* UIView+Layer.m */; };
+		9F5EB91220D4B00A00459474 /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB90720D4B00A00459474 /* UIViewController+Addition.m */; };
+		9F5EB91F20D4B1BD00459474 /* gophermusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91620D4B1BD00459474 /* gophermusic.mp3 */; };
+		9F5EB92020D4B1BD00459474 /* pipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91720D4B1BD00459474 /* pipe.mp3 */; };
+		9F5EB92120D4B1BD00459474 /* punch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91820D4B1BD00459474 /* punch.wav */; };
+		9F5EB92220D4B1BD00459474 /* punch3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91920D4B1BD00459474 /* punch3.mp3 */; };
+		9F5EB92320D4B1BD00459474 /* Sound06.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91A20D4B1BD00459474 /* Sound06.wav */; };
+		9F5EB92420D4B1BD00459474 /* Sound09.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91B20D4B1BD00459474 /* Sound09.wav */; };
+		9F5EB92520D4B1BD00459474 /* Sound11.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91C20D4B1BD00459474 /* Sound11.wav */; };
+		9F5EB92620D4B1BD00459474 /* Sound16.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91D20D4B1BD00459474 /* Sound16.wav */; };
+		9F5EB92720D4B1BD00459474 /* Sound18.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB91E20D4B1BD00459474 /* Sound18.wav */; };
+		9F5EB92920D4B41300459474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5EB92820D4B41300459474 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F5EB8BA20D4AE5900459474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F5EB89920D4AE5900459474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5EB8A020D4AE5900459474;
+			remoteInfo = ClimberFlappyBird;
+		};
+		9F5EB8C520D4AE5900459474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F5EB89920D4AE5900459474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5EB8A020D4AE5900459474;
+			remoteInfo = ClimberFlappyBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F5EB8A120D4AE5900459474 /* ClimberFlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimberFlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5EB8A420D4AE5900459474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F5EB8A520D4AE5900459474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F5EB8A720D4AE5900459474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F5EB8A820D4AE5900459474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F5EB8AB20D4AE5900459474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F5EB8AD20D4AE5900459474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F5EB8B020D4AE5900459474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F5EB8B220D4AE5900459474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5EB8B320D4AE5900459474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F5EB8B920D4AE5900459474 /* ClimberFlappyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimberFlappyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5EB8BD20D4AE5900459474 /* ClimberFlappyBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClimberFlappyBirdTests.m; sourceTree = "<group>"; };
+		9F5EB8BF20D4AE5900459474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5EB8C420D4AE5900459474 /* ClimberFlappyBirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimberFlappyBirdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5EB8C820D4AE5900459474 /* ClimberFlappyBirdUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClimberFlappyBirdUITests.m; sourceTree = "<group>"; };
+		9F5EB8CA20D4AE5900459474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5EB8D620D4AE9100459474 /* FCBirdOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBirdOverViewController.m; sourceTree = "<group>"; };
+		9F5EB8D720D4AE9100459474 /* FCBirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBirdViewController.h; sourceTree = "<group>"; };
+		9F5EB8D820D4AE9100459474 /* FCBirdOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBirdOverViewController.h; sourceTree = "<group>"; };
+		9F5EB8D920D4AE9100459474 /* FCBirdGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBirdGameViewController.m; sourceTree = "<group>"; };
+		9F5EB8DA20D4AE9200459474 /* FCBirdGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBirdGameViewController.h; sourceTree = "<group>"; };
+		9F5EB8DB20D4AE9200459474 /* FCBirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBirdViewController.m; sourceTree = "<group>"; };
+		9F5EB8DC20D4AE9200459474 /* FCBirdOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCBirdOverViewController.xib; sourceTree = "<group>"; };
+		9F5EB8DD20D4AE9200459474 /* FCBirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCBirdViewController.xib; sourceTree = "<group>"; };
+		9F5EB8DE20D4AE9200459474 /* FCBirdGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCBirdGameViewController.xib; sourceTree = "<group>"; };
+		9F5EB8E520D4AF1300459474 /* UtilsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsHeader.h; sourceTree = "<group>"; };
+		9F5EB8E620D4AF9E00459474 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9F5EB8EA20D4B00A00459474 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8EB20D4B00A00459474 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8EC20D4B00A00459474 /* NSString+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Safety.h"; sourceTree = "<group>"; };
+		9F5EB8ED20D4B00A00459474 /* NSString+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safety.m"; sourceTree = "<group>"; };
+		9F5EB8EE20D4B00A00459474 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8EF20D4B00A00459474 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8F220D4B00A00459474 /* CALayer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8F320D4B00A00459474 /* CALayer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8F520D4B00A00459474 /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8F620D4B00A00459474 /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8F720D4B00A00459474 /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8F820D4B00A00459474 /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8FA20D4B00A00459474 /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8FB20D4B00A00459474 /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
+		9F5EB8FD20D4B00A00459474 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
+		9F5EB8FE20D4B00A00459474 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
+		9F5EB90120D4B00A00459474 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		9F5EB90220D4B00A00459474 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9F5EB90320D4B00A00459474 /* UIView+Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layer.h"; sourceTree = "<group>"; };
+		9F5EB90420D4B00A00459474 /* UIView+Layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layer.m"; sourceTree = "<group>"; };
+		9F5EB90620D4B00A00459474 /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		9F5EB90720D4B00A00459474 /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
+		9F5EB91620D4B1BD00459474 /* gophermusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gophermusic.mp3; sourceTree = "<group>"; };
+		9F5EB91720D4B1BD00459474 /* pipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pipe.mp3; sourceTree = "<group>"; };
+		9F5EB91820D4B1BD00459474 /* punch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = punch.wav; sourceTree = "<group>"; };
+		9F5EB91920D4B1BD00459474 /* punch3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = punch3.mp3; sourceTree = "<group>"; };
+		9F5EB91A20D4B1BD00459474 /* Sound06.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound06.wav; sourceTree = "<group>"; };
+		9F5EB91B20D4B1BD00459474 /* Sound09.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound09.wav; sourceTree = "<group>"; };
+		9F5EB91C20D4B1BD00459474 /* Sound11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound11.wav; sourceTree = "<group>"; };
+		9F5EB91D20D4B1BD00459474 /* Sound16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound16.wav; sourceTree = "<group>"; };
+		9F5EB91E20D4B1BD00459474 /* Sound18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound18.wav; sourceTree = "<group>"; };
+		9F5EB92820D4B41300459474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F5EB89E20D4AE5900459474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8B620D4AE5900459474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8C120D4AE5900459474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F5EB89820D4AE5900459474 = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8A320D4AE5900459474 /* ClimberFlappyBird */,
+				9F5EB8BC20D4AE5900459474 /* ClimberFlappyBirdTests */,
+				9F5EB8C720D4AE5900459474 /* ClimberFlappyBirdUITests */,
+				9F5EB8A220D4AE5900459474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F5EB8A220D4AE5900459474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8A120D4AE5900459474 /* ClimberFlappyBird.app */,
+				9F5EB8B920D4AE5900459474 /* ClimberFlappyBirdTests.xctest */,
+				9F5EB8C420D4AE5900459474 /* ClimberFlappyBirdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F5EB8A320D4AE5900459474 /* ClimberFlappyBird */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB91420D4B15500459474 /* Resources */,
+				9F5EB91320D4B06200459474 /* Sections */,
+				9F5EB8E720D4B00A00459474 /* Category */,
+				9F5EB8A420D4AE5900459474 /* AppDelegate.h */,
+				9F5EB8A520D4AE5900459474 /* AppDelegate.m */,
+				9F5EB8A720D4AE5900459474 /* ViewController.h */,
+				9F5EB8A820D4AE5900459474 /* ViewController.m */,
+				9F5EB8E620D4AF9E00459474 /* PrefixHeader.pch */,
+				9F5EB8E520D4AF1300459474 /* UtilsHeader.h */,
+				9F5EB8AA20D4AE5900459474 /* Main.storyboard */,
+				9F5EB8AD20D4AE5900459474 /* Assets.xcassets */,
+				9F5EB8AF20D4AE5900459474 /* LaunchScreen.storyboard */,
+				9F5EB8B220D4AE5900459474 /* Info.plist */,
+				9F5EB8B320D4AE5900459474 /* main.m */,
+				9F5EB92820D4B41300459474 /* Images.xcassets */,
+			);
+			path = ClimberFlappyBird;
+			sourceTree = "<group>";
+		};
+		9F5EB8BC20D4AE5900459474 /* ClimberFlappyBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8BD20D4AE5900459474 /* ClimberFlappyBirdTests.m */,
+				9F5EB8BF20D4AE5900459474 /* Info.plist */,
+			);
+			path = ClimberFlappyBirdTests;
+			sourceTree = "<group>";
+		};
+		9F5EB8C720D4AE5900459474 /* ClimberFlappyBirdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8C820D4AE5900459474 /* ClimberFlappyBirdUITests.m */,
+				9F5EB8CA20D4AE5900459474 /* Info.plist */,
+			);
+			path = ClimberFlappyBirdUITests;
+			sourceTree = "<group>";
+		};
+		9F5EB8E720D4B00A00459474 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8E820D4B00A00459474 /* Foundation */,
+				9F5EB8F020D4B00A00459474 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9F5EB8E820D4B00A00459474 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8E920D4B00A00459474 /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9F5EB8E920D4B00A00459474 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8EA20D4B00A00459474 /* NSString+Addition.h */,
+				9F5EB8EB20D4B00A00459474 /* NSString+Addition.m */,
+				9F5EB8EC20D4B00A00459474 /* NSString+Safety.h */,
+				9F5EB8ED20D4B00A00459474 /* NSString+Safety.m */,
+				9F5EB8EE20D4B00A00459474 /* UIColor+Addition.h */,
+				9F5EB8EF20D4B00A00459474 /* UIColor+Addition.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		9F5EB8F020D4B00A00459474 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8F120D4B00A00459474 /* CALayer */,
+				9F5EB8F420D4B00A00459474 /* UIBarButtoItem */,
+				9F5EB8F920D4B00A00459474 /* UIImage */,
+				9F5EB8FC20D4B00A00459474 /* UILabel */,
+				9F5EB8FF20D4B00A00459474 /* UINavigationController */,
+				9F5EB90020D4B00A00459474 /* UIView */,
+				9F5EB90520D4B00A00459474 /* UIViewController */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9F5EB8F120D4B00A00459474 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8F220D4B00A00459474 /* CALayer+Addition.h */,
+				9F5EB8F320D4B00A00459474 /* CALayer+Addition.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		9F5EB8F420D4B00A00459474 /* UIBarButtoItem */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8F520D4B00A00459474 /* UIBarButtonItem+Addition.h */,
+				9F5EB8F620D4B00A00459474 /* UIBarButtonItem+Addition.m */,
+				9F5EB8F720D4B00A00459474 /* UIButton+Addition.h */,
+				9F5EB8F820D4B00A00459474 /* UIButton+Addition.m */,
+			);
+			path = UIBarButtoItem;
+			sourceTree = "<group>";
+		};
+		9F5EB8F920D4B00A00459474 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8FA20D4B00A00459474 /* UIImageView+Addition.h */,
+				9F5EB8FB20D4B00A00459474 /* UIImageView+Addition.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		9F5EB8FC20D4B00A00459474 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8FD20D4B00A00459474 /* UILabel+Addition.h */,
+				9F5EB8FE20D4B00A00459474 /* UILabel+Addition.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		9F5EB8FF20D4B00A00459474 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		9F5EB90020D4B00A00459474 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB90120D4B00A00459474 /* UIView+Frame.h */,
+				9F5EB90220D4B00A00459474 /* UIView+Frame.m */,
+				9F5EB90320D4B00A00459474 /* UIView+Layer.h */,
+				9F5EB90420D4B00A00459474 /* UIView+Layer.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		9F5EB90520D4B00A00459474 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB90620D4B00A00459474 /* UIViewController+Addition.h */,
+				9F5EB90720D4B00A00459474 /* UIViewController+Addition.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		9F5EB91320D4B06200459474 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB8D720D4AE9100459474 /* FCBirdViewController.h */,
+				9F5EB8DB20D4AE9200459474 /* FCBirdViewController.m */,
+				9F5EB8DD20D4AE9200459474 /* FCBirdViewController.xib */,
+				9F5EB8DA20D4AE9200459474 /* FCBirdGameViewController.h */,
+				9F5EB8D920D4AE9100459474 /* FCBirdGameViewController.m */,
+				9F5EB8DE20D4AE9200459474 /* FCBirdGameViewController.xib */,
+				9F5EB8D820D4AE9100459474 /* FCBirdOverViewController.h */,
+				9F5EB8D620D4AE9100459474 /* FCBirdOverViewController.m */,
+				9F5EB8DC20D4AE9200459474 /* FCBirdOverViewController.xib */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		9F5EB91420D4B15500459474 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB91520D4B1BD00459474 /* music */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F5EB91520D4B1BD00459474 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB91620D4B1BD00459474 /* gophermusic.mp3 */,
+				9F5EB91720D4B1BD00459474 /* pipe.mp3 */,
+				9F5EB91820D4B1BD00459474 /* punch.wav */,
+				9F5EB91920D4B1BD00459474 /* punch3.mp3 */,
+				9F5EB91A20D4B1BD00459474 /* Sound06.wav */,
+				9F5EB91B20D4B1BD00459474 /* Sound09.wav */,
+				9F5EB91C20D4B1BD00459474 /* Sound11.wav */,
+				9F5EB91D20D4B1BD00459474 /* Sound16.wav */,
+				9F5EB91E20D4B1BD00459474 /* Sound18.wav */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F5EB8A020D4AE5900459474 /* ClimberFlappyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5EB8CD20D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBird" */;
+			buildPhases = (
+				9F5EB89D20D4AE5900459474 /* Sources */,
+				9F5EB89E20D4AE5900459474 /* Frameworks */,
+				9F5EB89F20D4AE5900459474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClimberFlappyBird;
+			productName = ClimberFlappyBird;
+			productReference = 9F5EB8A120D4AE5900459474 /* ClimberFlappyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F5EB8B820D4AE5900459474 /* ClimberFlappyBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5EB8D020D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBirdTests" */;
+			buildPhases = (
+				9F5EB8B520D4AE5900459474 /* Sources */,
+				9F5EB8B620D4AE5900459474 /* Frameworks */,
+				9F5EB8B720D4AE5900459474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5EB8BB20D4AE5900459474 /* PBXTargetDependency */,
+			);
+			name = ClimberFlappyBirdTests;
+			productName = ClimberFlappyBirdTests;
+			productReference = 9F5EB8B920D4AE5900459474 /* ClimberFlappyBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F5EB8C320D4AE5900459474 /* ClimberFlappyBirdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5EB8D320D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBirdUITests" */;
+			buildPhases = (
+				9F5EB8C020D4AE5900459474 /* Sources */,
+				9F5EB8C120D4AE5900459474 /* Frameworks */,
+				9F5EB8C220D4AE5900459474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5EB8C620D4AE5900459474 /* PBXTargetDependency */,
+			);
+			name = ClimberFlappyBirdUITests;
+			productName = ClimberFlappyBirdUITests;
+			productReference = 9F5EB8C420D4AE5900459474 /* ClimberFlappyBirdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F5EB89920D4AE5900459474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = LiuYong;
+				TargetAttributes = {
+					9F5EB8A020D4AE5900459474 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9F5EB8B820D4AE5900459474 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9F5EB8A020D4AE5900459474;
+					};
+					9F5EB8C320D4AE5900459474 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9F5EB8A020D4AE5900459474;
+					};
+				};
+			};
+			buildConfigurationList = 9F5EB89C20D4AE5900459474 /* Build configuration list for PBXProject "ClimberFlappyBird" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F5EB89820D4AE5900459474;
+			productRefGroup = 9F5EB8A220D4AE5900459474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F5EB8A020D4AE5900459474 /* ClimberFlappyBird */,
+				9F5EB8B820D4AE5900459474 /* ClimberFlappyBirdTests */,
+				9F5EB8C320D4AE5900459474 /* ClimberFlappyBirdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F5EB89F20D4AE5900459474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5EB8E320D4AE9200459474 /* FCBirdViewController.xib in Resources */,
+				9F5EB92920D4B41300459474 /* Images.xcassets in Resources */,
+				9F5EB92420D4B1BD00459474 /* Sound09.wav in Resources */,
+				9F5EB8B120D4AE5900459474 /* LaunchScreen.storyboard in Resources */,
+				9F5EB8AE20D4AE5900459474 /* Assets.xcassets in Resources */,
+				9F5EB92720D4B1BD00459474 /* Sound18.wav in Resources */,
+				9F5EB92220D4B1BD00459474 /* punch3.mp3 in Resources */,
+				9F5EB8E220D4AE9200459474 /* FCBirdOverViewController.xib in Resources */,
+				9F5EB92520D4B1BD00459474 /* Sound11.wav in Resources */,
+				9F5EB92620D4B1BD00459474 /* Sound16.wav in Resources */,
+				9F5EB92020D4B1BD00459474 /* pipe.mp3 in Resources */,
+				9F5EB91F20D4B1BD00459474 /* gophermusic.mp3 in Resources */,
+				9F5EB8E420D4AE9200459474 /* FCBirdGameViewController.xib in Resources */,
+				9F5EB92320D4B1BD00459474 /* Sound06.wav in Resources */,
+				9F5EB92120D4B1BD00459474 /* punch.wav in Resources */,
+				9F5EB8AC20D4AE5900459474 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8B720D4AE5900459474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8C220D4AE5900459474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F5EB89D20D4AE5900459474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5EB90A20D4B00A00459474 /* UIColor+Addition.m in Sources */,
+				9F5EB8E120D4AE9200459474 /* FCBirdViewController.m in Sources */,
+				9F5EB91220D4B00A00459474 /* UIViewController+Addition.m in Sources */,
+				9F5EB8E020D4AE9200459474 /* FCBirdGameViewController.m in Sources */,
+				9F5EB91020D4B00A00459474 /* UIView+Frame.m in Sources */,
+				9F5EB90820D4B00A00459474 /* NSString+Addition.m in Sources */,
+				9F5EB90920D4B00A00459474 /* NSString+Safety.m in Sources */,
+				9F5EB90B20D4B00A00459474 /* CALayer+Addition.m in Sources */,
+				9F5EB8A920D4AE5900459474 /* ViewController.m in Sources */,
+				9F5EB8B420D4AE5900459474 /* main.m in Sources */,
+				9F5EB8DF20D4AE9200459474 /* FCBirdOverViewController.m in Sources */,
+				9F5EB91120D4B00A00459474 /* UIView+Layer.m in Sources */,
+				9F5EB90C20D4B00A00459474 /* UIBarButtonItem+Addition.m in Sources */,
+				9F5EB90F20D4B00A00459474 /* UILabel+Addition.m in Sources */,
+				9F5EB8A620D4AE5900459474 /* AppDelegate.m in Sources */,
+				9F5EB90E20D4B00A00459474 /* UIImageView+Addition.m in Sources */,
+				9F5EB90D20D4B00A00459474 /* UIButton+Addition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8B520D4AE5900459474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5EB8BE20D4AE5900459474 /* ClimberFlappyBirdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EB8C020D4AE5900459474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5EB8C920D4AE5900459474 /* ClimberFlappyBirdUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F5EB8BB20D4AE5900459474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5EB8A020D4AE5900459474 /* ClimberFlappyBird */;
+			targetProxy = 9F5EB8BA20D4AE5900459474 /* PBXContainerItemProxy */;
+		};
+		9F5EB8C620D4AE5900459474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5EB8A020D4AE5900459474 /* ClimberFlappyBird */;
+			targetProxy = 9F5EB8C520D4AE5900459474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F5EB8AA20D4AE5900459474 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5EB8AB20D4AE5900459474 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F5EB8AF20D4AE5900459474 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5EB8B020D4AE5900459474 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F5EB8CB20D4AE5900459474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F5EB8CC20D4AE5900459474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F5EB8CE20D4AE5900459474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClimberFlappyBird/PrefixHeader.pch";
+				INFOPLIST_FILE = ClimberFlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F5EB8CF20D4AE5900459474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClimberFlappyBird/PrefixHeader.pch";
+				INFOPLIST_FILE = ClimberFlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9F5EB8D120D4AE5900459474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				INFOPLIST_FILE = ClimberFlappyBirdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimberFlappyBird.app/ClimberFlappyBird";
+			};
+			name = Debug;
+		};
+		9F5EB8D220D4AE5900459474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				INFOPLIST_FILE = ClimberFlappyBirdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimberFlappyBird.app/ClimberFlappyBird";
+			};
+			name = Release;
+		};
+		9F5EB8D420D4AE5900459474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				INFOPLIST_FILE = ClimberFlappyBirdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBirdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClimberFlappyBird;
+			};
+			name = Debug;
+		};
+		9F5EB8D520D4AE5900459474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76H3SVGPJ4;
+				INFOPLIST_FILE = ClimberFlappyBirdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuyong.ClimberFlappyBirdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClimberFlappyBird;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F5EB89C20D4AE5900459474 /* Build configuration list for PBXProject "ClimberFlappyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5EB8CB20D4AE5900459474 /* Debug */,
+				9F5EB8CC20D4AE5900459474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5EB8CD20D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5EB8CE20D4AE5900459474 /* Debug */,
+				9F5EB8CF20D4AE5900459474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5EB8D020D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5EB8D120D4AE5900459474 /* Debug */,
+				9F5EB8D220D4AE5900459474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5EB8D320D4AE5900459474 /* Build configuration list for PBXNativeTarget "ClimberFlappyBirdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5EB8D420D4AE5900459474 /* Debug */,
+				9F5EB8D520D4AE5900459474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F5EB89920D4AE5900459474 /* Project object */;
+}

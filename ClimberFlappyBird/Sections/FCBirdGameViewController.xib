@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FCBirdGameViewController">
+            <connections>
+                <outlet property="backgroundView" destination="3we-Zc-lIH" id="eBr-JQ-cjv"/>
+                <outlet property="readyView" destination="a57-P1-pM7" id="RJg-h1-Jug"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Day_Background" translatesAutoresizingMaskIntoConstraints="NO" id="3we-Zc-lIH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="8Jr-e5-7mQ" appends="YES" id="UaD-c1-IrG"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a57-P1-pM7">
+                    <rect key="frame" x="67" y="160" width="240" height="240"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapToStart" translatesAutoresizingMaskIntoConstraints="NO" id="oac-Ti-bF5">
+                            <rect key="frame" x="60" y="110" width="120" height="130"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="vx4-Zj-2ox"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="W6x-eF-ji1" appends="YES" id="qZw-tM-Nit"/>
+                            </connections>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetReadyText" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-zG-jG0">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Wed-GL-2Cc"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xgu-zG-jG0" firstAttribute="leading" secondItem="a57-P1-pM7" secondAttribute="leading" id="677-V3-mZS"/>
+                        <constraint firstAttribute="trailing" secondItem="xgu-zG-jG0" secondAttribute="trailing" id="85c-ul-xJA"/>
+                        <constraint firstItem="oac-Ti-bF5" firstAttribute="top" secondItem="xgu-zG-jG0" secondAttribute="bottom" constant="40" id="Mh0-Cm-BUA"/>
+                        <constraint firstAttribute="height" constant="240" id="VvL-ti-IbB"/>
+                        <constraint firstItem="oac-Ti-bF5" firstAttribute="centerX" secondItem="a57-P1-pM7" secondAttribute="centerX" id="XPA-k8-u0K"/>
+                        <constraint firstAttribute="bottom" secondItem="oac-Ti-bF5" secondAttribute="bottom" id="bsi-Tw-i2o"/>
+                        <constraint firstAttribute="width" constant="240" id="eSB-dt-NDU"/>
+                        <constraint firstItem="xgu-zG-jG0" firstAttribute="top" secondItem="a57-P1-pM7" secondAttribute="top" id="rC5-Ag-WCl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a57-P1-pM7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CKU-uo-XZ3"/>
+                <constraint firstItem="3we-Zc-lIH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fxd-nB-1bc"/>
+                <constraint firstAttribute="trailing" secondItem="3we-Zc-lIH" secondAttribute="trailing" id="WLT-RZ-6bS"/>
+                <constraint firstAttribute="bottom" secondItem="3we-Zc-lIH" secondAttribute="bottom" constant="120" id="Wzp-7c-IJf"/>
+                <constraint firstItem="a57-P1-pM7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="qqz-Bc-4O6"/>
+                <constraint firstItem="3we-Zc-lIH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wUs-mu-X4y"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+        <tapGestureRecognizer id="8Jr-e5-7mQ">
+            <connections>
+                <action selector="tapToFly:" destination="-1" id="WEY-fe-M4P"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="W6x-eF-ji1">
+            <connections>
+                <action selector="tapToStartGame:" destination="-1" id="Edu-Wy-exU"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Day_Background" width="289" height="510"/>
+        <image name="GetReadyText" width="193" height="58"/>
+        <image name="TapToStart" width="114" height="98"/>
+    </resources>
+</document>

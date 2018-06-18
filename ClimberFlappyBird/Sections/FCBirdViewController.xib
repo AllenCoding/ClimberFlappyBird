@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FCBirdViewController">
+            <connections>
+                <outlet property="background" destination="zjh-hZ-4Jf" id="PCk-iY-Haw"/>
+                <outlet property="birdView" destination="7Tf-ps-6eN" id="6aj-io-6f6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Day_Background" translatesAutoresizingMaskIntoConstraints="NO" id="zjh-hZ-4Jf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-PR-dmh">
+                    <rect key="frame" x="132.5" y="427" width="110" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="Oea-Xd-efO"/>
+                        <constraint firstAttribute="height" constant="60" id="lMK-UU-C9T"/>
+                    </constraints>
+                    <state key="normal" image="PlayButton"/>
+                    <connections>
+                        <action selector="startGame:" destination="-1" eventType="touchUpInside" id="y5t-sy-QBu"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow_Bird_Wing_Straight" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-ps-6eN">
+                    <rect key="frame" x="167.5" y="317" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0n1-0j-XSD"/>
+                        <constraint firstAttribute="height" constant="40" id="WBA-QP-5JD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bottom_Scroller" translatesAutoresizingMaskIntoConstraints="NO" id="Hl6-rO-QYr">
+                    <rect key="frame" x="0.0" y="547" width="375" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="0vz-Th-JOw"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlappyBirdText" translatesAutoresizingMaskIntoConstraints="NO" id="5IM-gX-wQ6">
+                    <rect key="frame" x="72.5" y="207" width="230" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EZz-Bo-6MO"/>
+                        <constraint firstAttribute="width" constant="230" id="qys-Ib-sO2"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zjh-hZ-4Jf" secondAttribute="bottom" id="0fW-vo-QsI"/>
+                <constraint firstItem="7Tf-ps-6eN" firstAttribute="top" secondItem="5IM-gX-wQ6" secondAttribute="bottom" constant="60" id="17u-dl-Tow"/>
+                <constraint firstItem="uFs-PR-dmh" firstAttribute="top" secondItem="7Tf-ps-6eN" secondAttribute="bottom" constant="70" id="1W2-S6-wLP"/>
+                <constraint firstItem="5IM-gX-wQ6" firstAttribute="centerX" secondItem="7Tf-ps-6eN" secondAttribute="centerX" id="9FN-PT-u4O"/>
+                <constraint firstItem="Hl6-rO-QYr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FyM-WL-Wi7"/>
+                <constraint firstItem="uFs-PR-dmh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IJU-a2-aBc"/>
+                <constraint firstItem="7Tf-ps-6eN" firstAttribute="centerX" secondItem="uFs-PR-dmh" secondAttribute="centerX" id="JqU-Kc-WsR"/>
+                <constraint firstItem="zjh-hZ-4Jf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q40-Lb-6B1"/>
+                <constraint firstItem="Hl6-rO-QYr" firstAttribute="top" secondItem="uFs-PR-dmh" secondAttribute="bottom" constant="60" id="RXx-aL-sCn"/>
+                <constraint firstAttribute="trailing" secondItem="zjh-hZ-4Jf" secondAttribute="trailing" id="Whr-DL-T4R"/>
+                <constraint firstAttribute="bottom" secondItem="Hl6-rO-QYr" secondAttribute="bottom" id="l3i-gL-S0g"/>
+                <constraint firstAttribute="trailing" secondItem="Hl6-rO-QYr" secondAttribute="trailing" id="q5W-ib-x6F"/>
+                <constraint firstItem="zjh-hZ-4Jf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xa8-0v-9Ag"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bottom_Scroller" width="336" height="112"/>
+        <image name="Day_Background" width="289" height="510"/>
+        <image name="FlappyBirdText" width="178" height="48"/>
+        <image name="PlayButton" width="116" height="66"/>
+        <image name="Yellow_Bird_Wing_Straight" width="34" height="24"/>
+    </resources>
+</document>
